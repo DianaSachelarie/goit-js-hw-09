@@ -16,3 +16,53 @@ img {
   display: block;
   max-width: 100%;
 }
+
+button {
+  font-size: 17px;
+  color: rgba(190, 147, 169, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  padding: 5px 20px;
+}
+
+input {
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  height: 25px;
+  width: auto;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.timer {
+  display: flex;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.value {
+  padding: 15px;
+}
+
+.field .value::after {
+  content: '-';
+  position: relative;
+  right: -12px;
+  color: rgba(190, 147, 169, 0.8);
+}
+
+.field:last-child .value::after {
+  content: '';
+}
+
+.label {
+  display: block;
+  padding-top: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+  color: rgba(190, 147, 169, 0.8);
+}
